@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+
+      <meta content="description" content="Pure Hearts Yoga Photo Gallery Featuring Gia and Pure Heart Yoga in Graffiti Tag Style Letters">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      .gallery-item {
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    </style>
+    <title>Pure Heart Yoga</title>
+  </head>
+  <style>
+    .gallery-item {
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+        .gallery-item:hover {
+          transform: scale(1.05);
+          opacity: 0.9;
+          cursor: pointer;
+        }
+  </style>
+  <body>
+
+    <!-- outer navigation -->
+
+    <div class="outer-navigation-gallery">
+        <div class="nav-content">
+            <nav class="navigation">
+                <ul class="left-navigation">
+                    <li><a href="mainPage">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                </ul>
+                <ul class="right-navigation">
+                    <li><a href="login" class="login-link">Login</a></li>
+
+                </ul>
+            </nav>
+            <!-- arrow-down (fa fa-solid is from awesome - solid is visible, angle -down is icon position)-->
+            <div>
+                <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
+            </div>
+            <nav class="mobile-navigation">
+                <i class="fa fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./" class="login-link">Login</a></li>
+                </ul>
+            </nav>
+
+</div></div>
+
+
+
+
+
+
+  <div class="row">
+        <div class="col s12">
+          <div class="column">
+            <!-- Replace the image URLs with your actual images -->
+            <div class="gallery-item col s6 m4 l3">
+              <img src="Tree.png" alt="Yoga" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="x2plank.png" alt="Gia" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="x2cr0w.png" alt="Group Fitness" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="x3crow.png" alt="NY" class="materialboxed responsive-img">
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+  <div class="row">
+        <div class="col s12">
+          <div class="column">
+            <!-- Replace the image URLs with your actual images -->
+            <div class="gallery-item col s6 m4 l3">
+              <img src="IMG_2069.png" alt="Yoga" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="IMG_2075.png" alt="Gia" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="IMG_2076.png" alt="Group Fitness" class="materialboxed responsive-img">
+            </div>
+            <div class="gallery-item col s6 m4 l3">
+              <img src="IMG_2078.png" alt="wellness" class="materialboxed responsive-img">
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <footer>
+          <div class="navbar">
+              <a href="/" class="active">Home</a>
+              <a href="login.html">Login</a>
+              <a href="about.html">About</a>
+
+          <p>&copy; Gia Website Draft</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script type="text/javascript" src="nav.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Materialize components
+    const elems = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(elems);
+    // Initialize Masonry layout
+    const masonry = document.querySelector('.masonry-with-columns');
+    M.Masonry.init(masonry, {
+      itemSelector: '.gallery-item',
+      columnWidth: '.gallery-item',
+    });
+  });
+</script>
+
+  </body>
+
+
+</html>

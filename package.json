@@ -1,0 +1,53 @@
+{
+  "name": "pureheartyoga",
+  "version": "1.0.0",
+  "description": "yoga is excercise and wellness for a better all you",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JamesMedina7787/Yoga.git"
+  },
+  "keywords": [
+    "yoga",
+    "fitness",
+    "fit",
+    "cny",
+    "utica",
+    "wellness",
+    "meditation"
+  ],
+  "author": "jwm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesMedina7787/Yoga/issues"
+  },
+  "homepage": "https://github.com/JamesMedina7787/Yoga#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "mongo": "^0.1.0",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "nodemailer": "^6.9.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "stripe": "^12.9.0",
+    "twilio": "^4.11.2",
+    "zip": "^1.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.22"
+  }
+}

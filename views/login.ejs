@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Yoga | Login</title>
+</head>
+<body>
+    <nav class="navigation login-navigation" role="navigation">
+        <ul class="left-navigation">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="./about">About Us</a>
+            </li>
+        </ul>
+        <ul class="right-navigation">
+            <li>
+                <a href="./login" class="login-link">Login</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="mobile-navigation about-us-mobile-navoigation">
+        <ul>
+            <i>"fa-solid fa-bars"</i>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./login.html" class="login-link">Login</a></li>
+        </ul>
+    </div>
+    <div class="login-container">
+        <div class="left-login-container">
+
+        </div>
+        <% if (messages.error) { %>
+        <%= messages.error %>
+        <% } %>
+        <div class="right-login-container">
+            <form action="login" method="POST">
+                <h2 class="text-center">Login to your account</h2>
+                <label for="email"></label><br>
+                <input type="email" id="email" name="email" default="E-Mail" required><br>
+                <label for="password"><h3>Password</h3></label><br>
+                <input type="password" id="password" name="password" required><br>
+                <button type="submit">Login</button>
+            </form>
+                         <a href="/register"><h2>Get Pure and Register</h2></a>
+        </div>
+    </div>
+    <footer>
+        <p>Pure Heart Yoga LLC</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="nav.js"></script>
+</body>
+</html>

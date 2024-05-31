@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./calendar.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script>
+//  function clik(){
+
+//     var stripeHandler = StripeCheckout.Configure({
+//     key: publicKey,
+//     locale: 'auto',
+//      token: function(token){
+//       }
+//       var price = 1000
+//       stripeHandler.open({
+//         amount: price
+//       })
+//       console.log(token)
+//     })
+//   }
+var publicKey = '<%= publicKey %>'
+var items = '<%= items %>'
+     </script>
+     <script src="https://checkout.stripe.com/checkout.js"></script> <script defer> var handler = StripeCheckout.configure ({ key: "your testing key", locale: 'auto', image: "image/directory", name: "Name", description: "your discription", panelLabel: "Click to make payment", allowRememberMe: false, token: function (token) { // Prevent user from leaving page window.onbeforeunload = function () { return ""; } // Dynamically create a form element to submit the results // to your backend server var form = document.getElementById ("payment-form"); form.setAttribute ('method', "POST"); form.setAttribute ('action', "//localhost/dubb/charge.php"); // Add the token ID as a hidden field to the form payment-form var inputToken = document.createElement ("input"); inputToken.setAttribute ('type', "hidden"); inputToken.setAttribute ('name', "stripeToken"); inputToken.setAttribute ('value', token.id); form.appendChild (inputToken); // Add the email as a hidden field to the form var inputEmail = document.createElement ("input"); inputEmail.setAttribute ('type', "hidden"); inputEmail.setAttribute ('name', "stripeEmail"); inputEmail.setAttribute ('value', token.email); form.appendChild (inputEmail); // Finally, submit the form document.body.appendChild (form); // Artificial 5 second delay for testing setTimeout (function () { window.onbeforeunload = null; document.forms ["payment-form"].submit () }, 5000); } }); document.getElementById ('stripe-demo').addEventListener ('click', function (e) { handler.open (); e.preventDefault (); }); // Close Checkout on page navigation: window.addEventListener ('popstate', function () { handler.close (); }); </script>
+
+
+  <title>Pure Heart Yoga</title>
+    </head>
+<body>
+    <nav class="navigation about-us-navigation" role="navigation">
+        <ul class="left-navigation">
+            <li>
+                <a href="mainPage">Home</a>
+            </li>
+            <li>
+                <a href="about">About Us</a>
+            </li>
+        </ul>
+        <ul class="right-navigation">
+            <li>
+                <a href="login" class="login-link">Login</a>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="mobile-navigation about-us-mobile-navigation">
+        <ul>
+            <i class="fa-solid fa-bars"></i>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./login.html" class="login-link">Login</a></li>
+        </ul>
+    </div>
+    <main>
+
+
+      <h1 style="text-align:center">Select a Date for Yoga Class</h1>
+
+      <table class="calendar">
+        <thead>
+          <tr>
+            <th colspan="7">July 2023</th>
+          </tr>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+                              <% items.session.forEach(function(item) { %>
+        <tbody>
+          <tr>
+
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell"></td>
+  <td class="calendar-cell">1</td>
+</tr>
+<tr>
+  <td class="calendar-cell">2</td>
+  <td class="calendar-cell">3</td>
+  <td class="calendar-cell">4</td>
+  <td class="calendar-cell">5</td>
+  <td class="calendar-cell">6</td>
+  <td class="calendar-cell">7</td>
+  <td class="calendar-cell">8</td>
+</tr>
+<tr>
+  <td class="calendar-cell">9</td>
+  <td class="calendar-cell">10</td>
+  <td class="calendar-cell">11</td>
+  <td class="calendar-cell">12</td>
+  <td class="calendar-cell">13</td>
+  <td class="calendar-cell">14</td>
+  <td class="calendar-cell">15</td>
+</tr>
+<tr>
+  <td class="calendar-cell">16</td>
+  <td class="calendar-cell">17</td>
+  <td class="calendar-cell">18</td>
+
+  <td class="calendar-cell" id="info" data-time-and-date="July 19 at 5:15pm" data-title="<%= item.name %>" data-price="<%= item.price %>" data-image="<%= item.imageSrc %>" data-id="<%= item.id %>">19</td>
+  <td class="calendar-cell">20</td>
+  <td class="calendar-cell">21</td>
+  <td class="calendar-cell">22</td>
+</tr>
+<tr>
+  <td class="addToCartButtons" data-time-and-date="July 19 at 5:15pm">23</td>
+  <td class="calendar-cell">24</td>
+  <td class="calendar-cell">25</td>
+  <td class="calendar-cell">26</td>
+  <td class="calendar-cell">27</td>
+  <td class="calendar-cell">28</td>
+  <td class="calendar-cell">29</td>
+</tr>
+<tr>
+  <td class="calendar-cell">30</td>
+</tr>
+
+          <!-- ... Rest of the calendar ... -->
+        </tbody>
+      </table>
+<% }) %>
+
+
+
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">Class</span>
+          <span class="cart-quantity cart-header cart-column">Quantity</span>
+</div>
+
+
+                <div class="cart-quality-input">
+
+        </div>
+        <div class="cart-items">
+          <!-- Cart items will be added dynamically here -->
+
+</div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total Price</strong>
+          <span class="cart-total-price">$0</span>
+
+        </div>
+        <!-- Keep only one "Click here to Checkout!" button -->
+
+
+        <button class="btn btn-primary btn-purchase" onclick="purchaseClicked()">Click here to Checkout!</button>
+      </section>
+
+    <footer>
+        <p>PURE HEART YOGA LLC</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="store.js" defer></script>
+
+</body>
+
+</html>

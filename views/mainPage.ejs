@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Pure Heart Yoga</title>
+</head>
+<body>
+    <!-- outer navigation -->
+    <div class="outer-navigation">
+        <div class="nav-content">
+            <nav class="navigation">
+                <ul class="left-navigation">
+                    <li><a href="./mainPage">Home</a></li>
+                    <li><a href="./about">About Us</a></li>
+                </ul>
+                <ul class="right-navigation">
+                    <li><a href="./login" class="login-link">Login</a></li>
+
+                </ul>
+            </nav>
+            <div class="main-title-container">
+                <h1 class="main-title">Pure Heart Yoga</h1>
+                <button>Explore</button>
+            </div>
+            <!-- arrow-down (fa fa-solid is from awesome - solid is visible, angle -down is icon position)-->
+            <div>
+                <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
+            </div>
+            <nav class="mobile-navigation">
+                <i class="fa fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./login.html" class="login-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div class="main-row">
+           <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="yogamats" />
+            </div>
+           <div class="text-container">
+                <div>
+                    <h2>Who are we?</h2>
+                    <p>We are a small Yoga community located in central New York. We been in business over ten years.
+
+We are creative. We teach very loosely and uninihibited. You won't see us doing the same class twice.
+
+You are the director of your own experience. When you practice with us, you get a personalized, therapeutic session specifically designed for you.
+
+We are two certified Yoga instructors, that have both taught for about 8 years, throughout NYC, Westchester County, Long Island, and currently Central NY. We met in the Yoga arena. We have been working together ever since.
+</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="main-row">
+            <div class="text-container">
+                 <div>
+                     <h2>What we do.</h2>
+                     <p>We are the best of many worlds. The influences that mentored us through the years, live within the classes that we teach. We have worked with so many wonderful teachers from so many different backgrounds. Specifically, James Medina comes from a lineage of Hatha. Gianina Cipollaro comes from a background of Vinyasa flow.  </p>
+                 </div>
+             </div>
+             <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHlvZ2F8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="yogamats" />
+            </div>
+         </div>
+         <div class="our-mission">
+            <h2 class="text-center">Join us on our Journey</h2>
+            <p> aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum[d] exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? [D]Quis autem vel eum i[r]ure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? [33] At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor </p>
+            <button>Learn More</button>
+         </div>
+         <div class="contact-form">
+            <form action="data.php" method="post">
+                <h2>Contact Us</h2>
+                <label for="name">Your name:</label>
+                <input type="text" placeholder="Your name" id="name" required /> <br />
+                <label for="email">Your email:</label>
+                <input type="email" placeholder="Your email" id="email" required /> <br />
+                <label for="message">Your message: </label> <br />
+                <textarea id="message" cols="30" rows="8" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+         </div>
+        <!-- <div class="insta-header">
+         <h1 class="text-center">Follow Us!</h1>
+            <p class="insta-header" style="max-width: min(90%,1000px); margin: 0 auto;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officiis inventore, illo veniam ad, rerum, ducimus repellendus dicta perspiciatis corporis pariatur voluptatibus necessitatibus eos odit? Sit, ad non! Sapiente, vel!
+        </p>
+        </div>
+         <div class="insta">
+
+            <div class="insta-post" snaps-inline>
+
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/bxbellaitaliana/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/bxbellaitaliana/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOBTDVjFCG/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOBTDVjFCG/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOBTDVjFCG/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BwOBTDVjFCG/?utm_source=ig_embed&amp;utm_campaign=loading">
+                </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+
+         </div>
+        -->
+
+         <div class="carousel">
+            <div class="insta-header">
+                <h1 class="text-center">Follow us on Instagram!</h1>
+                   <p class="insta-header" style="max-width: min(90%,1000px); margin: 0 auto;">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officiis inventore, illo veniam ad, rerum, ducimus repellendus dicta perspiciatis corporis pariatur voluptatibus necessitatibus eos odit? Sit, ad non! Sapiente, vel!
+                    </p>
+                    <p>Insert social media icons here</p>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+            <button class="left" onclick="leftScroll()">
+                <i class="fas fa-chevron-left" ></i>
+            </button>
+            <button class="right" onclick="rightScroll()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            </div>
+
+
+            <div class="test-img-container">
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bt9MFsYFFIu/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9cgMDaDT2z/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BwOBTDVjFCG/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9IfCX-jeMr/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/B9A2Q0mD0PN/?utm_source=ig_embed&amp;utm_campaign=loading">
+
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bsb7Nc8gexZ/?utm_source=ig_embed&amp;utm_campaign=loading">
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+
+
+                <script>
+                    function rightScroll() {
+                    const left = document.querySelector(".test-img-container");
+                    left.scrollBy(200, 0);
+                    }
+                    function leftScroll() {
+                    const right = document.querySelector(".test-img-container");
+                    right.scrollBy(-200, 0);
+                    }
+                </script>
+            </div>
+
+    </main>
+    <footer>
+        <div class="navbar">
+            <a href="./mainPage" class="active">Home</a>
+            <a href="./login">Login</a>
+            <a href="./about">About</a>
+        </div>
+        <p>&copy; Gia Website Draft</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.banner {
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: 	#ff99ff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    z-index: 9999;
+    animation: fadeInOut 7s infinite;
+    color: purple;
+    max-width: 30%;
+    float: right;
+    position: relative;
+    top: 30%;
+    right: 40px;
+    margin-left: 30%;
+    flex: 1;
+}
+
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.calendar {
+  display: inline-block;
+  border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.calendar th {
+  background-color: #f2f2f2;
+}
+
+.calendar td:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.calendar .selected {
+  background-color: #ffcc00;
+}

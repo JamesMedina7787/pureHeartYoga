@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Pure Heart Yoga</title>
+  </head>
+
+  <body >
+
+    <!-- outer navigation -->
+
+    <div class="outer-navigation">
+        <div class="nav-content">
+            <nav class="navigation">
+                <ul class="left-navigation">
+                    <li><a href="mainPage">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                </ul>
+                <ul class="right-navigation">
+                    <li><a href="login" class="login-link">Login</a></li>
+
+                </ul>
+            </nav>
+            <!-- arrow-down (fa fa-solid is from awesome - solid is visible, angle -down is icon position)-->
+            <div>
+                <i class="fa fa-solid fa-angle-down arrow-down-navigation" id="scroll-icon"></i>
+            </div>
+            <nav class="mobile-navigation">
+                <i class="fa fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./" class="login-link">Login</a></li>
+                </ul>
+            </nav>
+
+
+
+
+    <main class="gallery">
+      <div class="banner" style="float: left;transform: translate(0%, 0%);">
+          <h1>Join our Yoga Classes!</h1>
+          <p>Sundays at 11:15 AM and Wednesdays at 5:30 PM</p>
+          <p>Clearly Connected Wellness in Motion</p>
+          <p>331 Oriskany Boulevard, Whitesboro, NY 13492</p>
+      </div>
+      <div class="image-container" >
+        <img alt="whitesboro" src="IMG_2069.png">
+        </div>
+        <div class="image-container">
+          <img alt="pure heart" src="IMG_2075.png">
+          </div>
+
+          <div class="image-container" >
+            <img alt="yoga" src="IMG_2076.png">
+            </div>
+
+            <div class="image-container" >
+              <img alt="group fitness" src="IMG_2078.png">
+              </div>
+
+
+      </main>
+
+      <footer>
+          <div class="navbar">
+              <a href="/" class="active">Home</a>
+              <a href="login.html">Login</a>
+              <a href="about.html">About</a>
+          </div>
+          <p>&copy; Gia Website Draft</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script type="text/javascript" src="nav.js"></script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="nav.js"></script>
+
+</html>

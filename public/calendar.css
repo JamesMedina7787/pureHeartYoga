@@ -1,0 +1,35 @@
+
+  /* CSS styles for the calendar */
+  .calendar {
+    display: inline-block;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 35%;
+    width:30%
+  }
+
+  .calendar th,
+  .calendar td {
+    padding: 10px;
+    text-align: center;
+    color: #ff99ff;
+    border: 1px solid #ccc;
+  }
+
+  .calendar th {
+    background-color: #f2f2f2;
+  }
+
+  .calendar td:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+  }
+
+  .calendar .selected {
+    background-color: #ffcc00;
+  }
+
+  td.unavailable {
+  pointer-events: none; /* Disables pointer events, so the cell cannot be clicked */
+  color: gray; /* Sets the text color to gray to visually indicate that it's unavailable */
+}
