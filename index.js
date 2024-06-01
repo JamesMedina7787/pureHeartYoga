@@ -22,8 +22,6 @@ connectDB()
 
 
 
-
-const twilio = require('twilio');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const path = require('path')
@@ -88,7 +86,6 @@ const MONGO = process.env.MONGO
 
 const stripe = require('stripe')(SECRET_KEY);
 
-const client = twilio(accountSid, authToken);
 
 const emailService = 'outlook.com'
 const emailRecipient = 'pureheartyoga@outlook.com';
@@ -118,12 +115,11 @@ app.get("/", (req, res)=>{
   res.render('mainPage')
 })
 
-// Configure Twilio credentials
-const twilioPhoneNumber = '6468068599';
+
 
 // Configure Nodemailer settings
 
-// Create Twilio client
+
 
 // Create Nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -153,19 +149,7 @@ const transporter = nodemailer.createTransport({
 // Handle the form submission
 app.post('/send_email', (req, res) => {
 
-//  const { name, email, message } = req.body
 
-  // Send SMS via Twilio
-//  client.messages
-//    .create({
-//      body: `Message from ${name} (${email}): ${message}`,
-//      from: twilioPhoneNumber,
-//      to: 'RECIPIENT_PHONE_NUMBER',
-  //  })
-  //  .then((message) => console.log(`SMS sent: ${message.sid}`))
-  //  .catch((error) => console.error(`Error sending SMS: ${error.message}`));
-
-  // Send email via Nodemailer
   const mailOptions = ({
     from: emailSender,
     to: emailRecipient,
