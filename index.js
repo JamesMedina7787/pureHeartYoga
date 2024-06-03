@@ -31,7 +31,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const bcrypt = require('bcrypt')
-const flash = require('express-flash')
+//const flash = require('express-flash')
 const session= require("express-session")
 
 // const connectionString = 'mongodb+srv://<username>:<password>@<cluster-url>/<database>?retryWrites=true&w=majority';
@@ -100,9 +100,9 @@ app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(flash())
+//app.use(flash())
 
-
+/**
 app.use(session({
   secret: process.env.SESSION_SECRET,
   resave:false,
@@ -112,7 +112,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 
-
+**/
 app.get("/", (req, res)=>{
   res.render('mainPage')
 })
