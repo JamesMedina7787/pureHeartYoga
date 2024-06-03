@@ -14,11 +14,11 @@ const ejs = require('ejs');
 
 
 //const { MongoClient } = require('mongodb');
-const connectDB = require('./db.js')
+//const connectDB = require('./db.js')
 //Load configure
 
 
-connectDB()
+//connectDB()
 
 
 
@@ -63,7 +63,7 @@ const session= require("express-session")
 //  users.find(user =>user.email === email)
 //})
 const users = []
-
+/**
 const User = require('./user.js');
 const initializePassport = require('./passportConfig.js');
 
@@ -77,16 +77,18 @@ initializePassport(
 // Rest of your routes and code...
 
 
-const emailPassword = process.env.emailPassword
+
 const accountSid =  process.env.accountSid
 const authToken =  process.env.authToken
 const PUB_KEY = process.env.PUB_KEY
-const SECRET_KEY = process.env.SECRET_KEY
+//const SECRET_KEY = process.env.SECRET_KEY
 const MONGO = process.env.MONGO
 
 const stripe = require('stripe')(SECRET_KEY);
 
+ **/
 
+const emailPassword = process.env.emailPassword
 const emailService = 'outlook.com'
 const emailRecipient = 'pureheartyoga@outlook.com';
 const emailSender = 'jamesmedina7787@outlook.com';
@@ -174,6 +176,8 @@ app.get("/mainPage", (req, res)=>{
   res.render('mainPage.ejs')
 })
 
+
+/**
 app.get("/book", (req, res)=>{
   res.render('book.ejs')
 })
@@ -193,7 +197,7 @@ app.get('/payment', function(req, res){
   })
 })
 
-app.post('/book', function(req,res){
+ app.post('/book', function(req,res){
   fs.readFile('items.json', function(error, data){
     if(error){
       res.status(500).end()
@@ -212,7 +216,7 @@ app.post('/book', function(req,res){
       }
     }
 )
-})
+})**/
 
 
 
@@ -241,7 +245,7 @@ app.post('/book', function(req,res){
 app.get("/about", (req, res)=>{
   res.render('about.ejs')
 })
-
+/**
 app.get('/login',checkNotAuthenticated , (req,res)=>{
   res.render('login.ejs')
 })
@@ -299,7 +303,7 @@ console.log(users)
     res.redirect('/register'); // You might want to display an error message here
   }
 });
-
+ **/
 app.get('/gallery', (req,res)=>{
   res.render('gallery.ejs')
 })
@@ -320,6 +324,8 @@ app.get('/gallery', (req,res)=>{
 //});
 
 //})
+
+/**
 function checkAuthenticated(req, res, next) {
   if(req.isAuthenticated()) {
     return next()
@@ -335,7 +341,7 @@ function checkNotAuthenticated(req, res, next){
  next()
 }
 
-
+**/
 app.listen(PORT, () => {
   console.log('Server is running on port 3000');
 });
